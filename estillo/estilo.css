@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+body{
+    font-family: 'Nova Round', cursive;
+    background-image:url(../estillo/imagens/fundo.png);
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: center;
+    
+}
+.areaCodificar{
+    margin: 20px;
+    height: 200px;
+    width: 400px;
+    border: solid 2px blue;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(161, 156, 156);
+}
+.instrucao{
+  text-align: center;
+  font-size: 18px;
+}
+.resultado{
+    text-align: center;
+    font-size: 18px;
+}
+
+.texto{
+    width: 350px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+    
+}
+.textoResultado{
+    width: 350px;
+    height: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+.areaBotoes{
+    width: 270px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.botao{
+    width: 160px;
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px;
+
+   
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.areaBotaoCopiar{
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.botaoCopiar{
+    width: 100px;
+    height: 40px;
+}
+.botao:hover{
+    background-color: rgb(184, 53, 53);
+    transition: 1.3s;
+    color: white;
+}
+
+@media only screen and (max-width: 890px){
+    section{
+        flex-direction: column;
+    }
+    .areaCodificar{
+        background-color: white;
+    }
+}    
+
+@media only screen and (max-width: 455px) and (min-width:340px){
+    section{
+        flex-direction: column;
+    }
+    .areaCodificar{
+        background-color: white;
+    }
+    .texto{
+        width: 250px;        
+    }
+    .textoResultado{
+        width: 250px;       
+    }
+    .areaCodificar{
+        width: 300px;       
+    }    
+
+
+}    

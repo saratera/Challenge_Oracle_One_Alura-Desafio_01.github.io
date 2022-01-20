@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estillo/estilo.css">
+    <title>Codificador</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h2> Codificador </h2>
+        </div>
+    </header>
+    <section >
+        <div class="areaCodificar">
+            <form action="">
+
+                <div class="instrucao"> <h5 >Apenas letras minúsculas, sem acento</h5></div>
+
+                <input type="text" placeholder="digite aqui" class="texto" id="textoDigitado">
+                <br>
+
+                <div class="areaBotoes">
+
+                    <button type="submit" class="botao" id="criptografar">    Criptografar    <img src="../estillo/imagens/lock_white_24dp.svg" > </button>
+                    <button type="submit" class="botao" id="descriptografar"> Descriptografar     <img src="../estillo/imagens/lock_open_white_24dp.svg" > </button>
+                   
+
+                </div>
+                
+                
+            </form>
+        </div>
+
+        <div class="areaCodificar">
+            <form action="">
+
+                <div class="resultado"> <h5 id="resultado">Mensagem</h5></div>
+                
+                <div class="textoResultado"></div>
+
+                <div class="areaBotaoCopiar">
+
+                    <button class=" botao" id="copiar"> Copiar </button>
+                    
+
+                </div>
+                
+            </form>
+        </div>
+
+
+    </section>
+
+    
+    <script src="../script/mensagem.js"></script>
+    <script src="../script/adcEventosBotoes.js"></script>
+    <script src="../script/criptografar.js"></script>
+    <script src="../script/descriptografar.js"></script>
+    <script src="../script/copiar.js"></script>
+    
+
+</body>
+</html>
